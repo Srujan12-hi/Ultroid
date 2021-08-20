@@ -11,7 +11,7 @@ from .play import queue_func
 
 def AUTH_FILTER(client, query):
     if query.from_user.id not in VC_AUTHS():
-        query.answer("You are Not Authorised to Use Me!", show_alert=True)
+        query.answer("Nikal Loude", show_alert=True)
         return False
     return True
 
